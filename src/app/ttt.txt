@@ -1,0 +1,82 @@
+.neonContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.neonLight {
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 0, 0.3) 25%,
+    rgba(255, 255, 0, 0.8) 50%,
+    rgba(255, 255, 0, 0.3) 75%,
+    transparent 100%
+  );
+  box-shadow: 0 0 8px rgba(255, 255, 0, 0.5), 0 0 12px rgba(255, 255, 0, 0.3);
+  opacity: 0.7;
+  animation: moveLight 8s linear infinite;
+}
+
+@keyframes moveLight {
+  /* Down the left side */
+  0% {
+    top: -3px;
+    left: 0;
+    width: 3px;
+    height: 100px;
+  }
+  24% {
+    top: 500px;
+    left: 0;
+    width: 3px;
+    height: 100px;
+  }
+  /* Across the bottom */
+  25% {
+    top: 497px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+  }
+  49% {
+    top: 497px;
+    left: 700px;
+    width: 100px;
+    height: 3px;
+  }
+  /* Up the right side */
+  50% {
+    top: 500px;
+    left: 697px;
+    width: 3px;
+    height: 100px;
+  }
+  74% {
+    top: -3px;
+    left: 697px;
+    width: 3px;
+    height: 100px;
+  }
+  /* Across the top */
+  75% {
+    top: 0;
+    left: 700px;
+    width: 100px;
+    height: 3px;
+  }
+  99% {
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+  }
+  100% {
+    top: -3px;
+    left: 0;
+    width: 3px;
+    height: 100px;
+  }
+}

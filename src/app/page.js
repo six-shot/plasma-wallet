@@ -7,6 +7,7 @@ import MultiChain from "./section/multichain";
 import FeautureCard1 from "@/components/ui/cards/FeautureCard1";
 import FeautureCard2 from "@/components/ui/cards/FeautureCard2";
 import FeautureCard3 from "@/components/ui/cards/FeautureCard3";
+import MovingLight from "./section/movinglight";
 export default function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function Home() {
       <FeautureCard1 />
       <FeautureCard2 />
       <FeautureCard3 />
+      <MovingLight />
     </div>
   );
 }
