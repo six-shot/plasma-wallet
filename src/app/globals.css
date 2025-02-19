@@ -28,8 +28,7 @@ body {
   font-size: 96px;
 }
 
-/* Button frames animation */
-.button-frames {
+.frames {
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: xor;
@@ -38,11 +37,11 @@ body {
   padding: 1px;
 }
 
-.button-frames-primary {
+.frames-primary {
   background-color: #1c1d1b;
 }
 
-.button-frames-primary:before {
+.frames-primary:before {
   background: conic-gradient(
     from 5deg at 50% 50%,
     transparent 340deg,
@@ -51,8 +50,25 @@ body {
   );
 }
 
-/* Animation for the frame */
-.button-frames:before {
+.frames-primary:after {
+  width: 100%;
+  aspect-ratio: 1/1;
+  top: 50%;
+  left: 0;
+  position: absolute;
+  transform: translate(-25%, -50%) rotate(45deg);
+  content: "";
+  animation: frames 8s linear infinite;
+  animation-delay: -4s;
+  background: conic-gradient(
+    from 5deg at 50% 50%,
+    transparent 340deg,
+    #f5e722 360deg,
+    transparent 361deg
+  );
+}
+
+.frames:before {
   width: 100%;
   aspect-ratio: 1/1;
   top: 50%;
@@ -60,10 +76,10 @@ body {
   position: absolute;
   transform: translate(-25%, -50%) rotate(225deg);
   content: "";
-  animation: button-frames 4s linear infinite;
+  animation: frames 8s linear infinite;
 }
 
-@keyframes button-frames {
+@keyframes frames {
   0% {
     transform: translate(-25%, -50%) rotate(225deg);
   }
