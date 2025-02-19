@@ -1,12 +1,69 @@
-import React from 'react'
+"use client";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Feature() {
+  const containerRef = useRef(null);
+  const text1Ref = useRef(null);
+  const text2Ref = useRef(null);
+  const text3Ref = useRef(null);
+  const text4Ref = useRef(null);
+
+  const { scrollYProgress: scroll1 } = useScroll({
+    target: text1Ref,
+    offset: ["start end", "end start"],
+  });
+  const { scrollYProgress: scroll2 } = useScroll({
+    target: text2Ref,
+    offset: ["start end", "end start"],
+  });
+  const { scrollYProgress: scroll3 } = useScroll({
+    target: text3Ref,
+    offset: ["start end", "end start"],
+  });
+  const { scrollYProgress: scroll4 } = useScroll({
+    target: text4Ref,
+    offset: ["start end", "end start"],
+  });
+
+  const opacity1 = useTransform(scroll1, [0, 0.5], [0, 1]);
+  const opacity2 = useTransform(scroll2, [0, 0.5], [0, 1]);
+  const opacity3 = useTransform(scroll3, [0, 0.5], [0, 1]);
+  const opacity4 = useTransform(scroll4, [0, 0.5], [0, 1]);
+
   return (
-    <div className="h-[120vh] flex justify-center items-center flex-col">
-      <h1 className="h1 font-sfpro_display_bold">Self-Custody</h1>
-      <h1 className="h1 font-sfpro_display_bold">Crypto wallet</h1>
-      <h1 className="h1 font-sfpro_display_bold">For DeFi, NFT</h1>
-      <h1 className="h1 font-sfpro_display_bold">& Metaverse</h1>
+    <div
+      ref={containerRef}
+      className="h-[120vh] flex justify-center items-center flex-col"
+    >
+      <motion.h1
+        ref={text1Ref}
+        style={{ opacity: opacity1 }}
+        className="h1 font-sfpro_display_bold"
+      >
+        Self-Custody
+      </motion.h1>
+      <motion.h1
+        ref={text2Ref}
+        style={{ opacity: opacity2 }}
+        className="h1 font-sfpro_display_bold"
+      >
+        Crypto wallet
+      </motion.h1>
+      <motion.h1
+        ref={text3Ref}
+        style={{ opacity: opacity3 }}
+        className="h1 font-sfpro_display_bold"
+      >
+        For DeFi, NFT
+      </motion.h1>
+      <motion.h1
+        ref={text4Ref}
+        style={{ opacity: opacity4 }}
+        className="h1 font-sfpro_display_bold"
+      >
+        & Metaverse
+      </motion.h1>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="w-full h-[3.5rem] flex items-center bg-[#ffffff00] backdrop-blur-[20px] px-[5%] py-[2rem]">
+    <div className="w-full h-[3.5rem] flex items-center bg-[#ffffff00] backdrop-blur-[5px] px-[5%] py-[2rem]">
       <div className="flex justify-between items-center w-full">
         <Link href="/">
           <div className="flex flex-col">
