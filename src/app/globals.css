@@ -16,3 +16,14 @@ body {
   font-size: 124px;
   line-height: 132px;
 }
+.h11 {
+    -webkit-text-fill-color: transparent;
+    background-image: url("../../public/text.png");
+    background-position: 0 0;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 96px;
+}
