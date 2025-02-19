@@ -7,9 +7,10 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        sfpro_display_bold: ["var(--font-sfpro-display-bold)"],
+        sfpro_display_medium: ["var(--font-sfpro-display-medium)"],
+        sfpro_display_regular: ["var(--font-sfpro-display-regular)"],
       },
     },
   },

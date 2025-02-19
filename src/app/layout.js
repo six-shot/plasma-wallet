@@ -1,14 +1,21 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+
+const sfpro_display_bold = localFont({
+  src: "../../public/fonts/SFPRODISPLAYBOLD.otf",
+  variable: "--font-sfpro-display-bold",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const sfpro_display_medium = localFont({
+  src: "../../public/fonts/SFPRODISPLAYMEDIUM.otf",
+  variable: "--font-sfpro-display-medium",
+    }); 
+
+const sfpro_display_regular = localFont({
+  src: "../../public/fonts/SFPRODISPLAYREGULAR.otf",
+  variable: "--font-sfpro-display-regular",
 });
 
 export const metadata = {
@@ -20,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sfpro_display_bold.variable} ${sfpro_display_medium.variable} ${sfpro_display_regular.variable} antialiased`}
       >
         {children}
       </body>
