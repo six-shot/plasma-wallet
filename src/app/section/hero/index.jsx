@@ -17,7 +17,7 @@ export default function Hero() {
         height="100%"
         className="relative z-0 md:block hidden"
       ></iframe>
-      <div className="absolute  hidden   md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 md:flex justify-center items-center flex-col">
+      <div className="absolute w-full  hidden   md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 md:flex justify-center items-center flex-col">
         <Image
           src={product_image}
           alt="product_image"
