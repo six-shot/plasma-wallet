@@ -3,15 +3,15 @@ import Image from 'next/image'
 import feature_card from "../../../../public/personality.png"
 export default function Personality() {
   return (
-    <div className="flex justify-center items-center flex-col my-[140px]">
-      <h2 className="text-[96px] font-sfpro_display_bold   text-white leading-[107px] py-5 text-center">
-        Personality <br /> is Important
+    <div className="flex justify-center items-center flex-col md:my-[140px] my-[100px]">
+      <h2 className="md:text-[96px] text-[48px] font-sfpro_display_bold   text-white md:leading-[107px] leading-[107%] py-5 text-center ">
+        Personality <br className="md:block hidden"/> is Important
       </h2>
-      <p className="text-[26px] font-sfpro_display_regular leading-[112%] mb-[100px] text-white">
+      <p className="md:text-[26px] text-[18px] font-sfpro_display_regular leading-[112%] mb-[100px] text-white">
         Customize your wallet experience
       </p>
       <Image
-        className="w-[490px]  h-[890px] object-contain"
+        className="md:w-[490px] w-[219px]  md:h-[890px] h-[446px] object-contain"
         src={feature_card}
         alt="feature-card"
       />

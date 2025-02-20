@@ -13,8 +13,7 @@ body {
   background-clip: text;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 124px;
-  line-height: 132px;
+
 }
 .h11 {
   -webkit-text-fill-color: transparent;
@@ -25,7 +24,7 @@ body {
   background-attachment: fixed;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 96px;
+  
 }
 .prr {
   -webkit-text-fill-color: transparent;
@@ -36,7 +35,7 @@ body {
   background-attachment: fixed;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 96px;
+  
 }
 
 .frames {

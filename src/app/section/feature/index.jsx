@@ -34,33 +34,33 @@ export default function Feature() {
   return (
     <div
       ref={containerRef}
-      className="h-[120vh] flex justify-center items-center flex-col"
+      className="md:h-[120vh] h-full md:py-0 py-[100px] flex justify-center items-center flex-col"
     >
       <motion.h1
         ref={text1Ref}
         style={{ opacity: opacity1 }}
-        className="h1 font-sfpro_display_bold"
+        className="h1 font-sfpro_display_bold md:text-[124px] text-[36px] md:leading-[132px] leading-[116%]"
       >
         Self-Custody
       </motion.h1>
       <motion.h1
         ref={text2Ref}
         style={{ opacity: opacity2 }}
-        className="h1 font-sfpro_display_bold"
+        className="h1 font-sfpro_display_bold md:text-[124px] text-[36px] md:leading-[132px] leading-[116%]"
       >
         Crypto wallet
       </motion.h1>
       <motion.h1
         ref={text3Ref}
         style={{ opacity: opacity3 }}
-        className="h1 font-sfpro_display_bold"
+        className="h1 font-sfpro_display_bold md:text-[124px] text-[36px] md:leading-[132px] leading-[116%]"
       >
         For DeFi, NFT
       </motion.h1>
       <motion.h1
         ref={text4Ref}
         style={{ opacity: opacity4 }}
-        className="h1 font-sfpro_display_bold"
+        className="h1 font-sfpro_display_bold md:text-[124px] text-[36px] md:leading-[132px] leading-[116%]"
       >
         & Metaverse
       </motion.h1>

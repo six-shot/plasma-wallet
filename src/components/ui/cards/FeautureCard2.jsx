@@ -29,19 +29,19 @@ export default function FeautureCard2() {
   const imageY = useTransform(scrollYProgress, [0.25, 0.55], [50, 0]);
 
   return (
-    <div className="h-[120vh] flex justify-center items-center">
+    <div className="md:h-[120vh] h-full md:py-0 py-[100px] flex justify-center items-center md:px-0 px-5">
       <motion.div ref={ref} className="flex text-white">
-        <div className="flex items-center">
+        <div className="flex md:flex-row flex-col items-center">
           <div className="pr-10">
             <motion.h2
-              className="text-[96px] font-sfpro_display_bold   h11 leading-[107px] "
+              className="md:text-[96px] text-[48px] font-sfpro_display_bold   h11 md:leading-[107px] leading-[107%] md:text-left text-center "
               style={{ opacity, y }}
             >
               All DEXes <br />
               in your <br />
               pockets
             </motion.h2>
-            <p className="mt-10 text-[26px] font-sfpro_display_regular leading-[112%] tracking-[1.1px] text-[#cecece] w-[465px]">
+            <p className="mt-10 md:text-[26px] text-[18px] font-sfpro_display_regular leading-[112%] tracking-[1.1px] text-[#cecece] md:w-[465px] w-full md:text-left text-center">
               Explore the list of 1000s dApps or connect Web3 App with a
               WalletConnect protocol
             </p>
@@ -50,25 +50,25 @@ export default function FeautureCard2() {
             items-center mr-[10%] mt-10
             "
             >
-              <div className="flex justify-between w-full">
-                <Image src={Logos1} alt="logo" />
-                <Image src={Logos2} alt="logo" />
-                <Image src={Logos3} alt="logo" />
-                <Image src={Logos4} alt="logo" />
-                <Image src={Logos5} alt="logo" />
+              <div className="flex justify-between w-full  md:px-0 px-10">
+                <Image src={Logos1} className="md:w-auto w-[50px]" alt="logo" />
+                <Image src={Logos2} className="md:w-auto w-[50px]" alt="logo" />
+                <Image src={Logos3} className="md:w-auto w-[50px]" alt="logo" />
+                <Image src={Logos4} className="md:w-auto w-[50px]" alt="logo" />
+                <Image src={Logos5} className="md:w-auto w-[50px]" alt="logo" />
               </div>
-              <div className="flex justify-between w-full">
-                <Image src={Logos6} alt="logo" />
-                <Image src={Logos7} alt="logo" />
-                <Image src={Logos8} alt="logo" />
-                <Image src={Logos9} alt="logo" />
-                <Image src={Logos10} alt="logo" />
+              <div className="flex justify-between w-full md:px-0 px-10">
+                <Image src={Logos6} className="md:w-auto w-[50px]" alt="logo" />
+                <Image src={Logos7} className="md:w-auto w-[50px]" alt="logo" />
+                <Image src={Logos8} className="md:w-auto w-[50px]" alt="logo" />
+                <Image src={Logos9} className="md:w-auto w-[50px]" alt="logo" />
+                <Image src={Logos10} className="md:w-auto w-[50px]" alt="logo" />
               </div>
             </div>
           </div>
-          <motion.div style={{ opacity: imageOpacity, y: imageY }}>
+          <motion.div style={{ opacity: imageOpacity, y: imageY }} className="md:mt-0 mt-10">
             <Image
-              className="w-[490px]  h-[890px] object-contain"
+              className="md:w-[490px] w-[219px]  md:h-[890px] h-[446px] object-contain"
               src={feature_card}
               alt="feature-card"
             />

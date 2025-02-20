@@ -11,27 +11,27 @@ import footer from "../../../../public/footer.png";
 
 export default function Footer() {
   return (
-    <div className="pt-[140px] flex justify-center items-center flex-col">
-      <h4 className="text-[56px] font-sfpro_display_bold leading-[107%] mb-[140px] text-[#cecece] text-center">
+    <div className="md:pt-[140px] pt-[100px] flex justify-center items-center flex-col md:px-0 px-5">
+      <h4 className="md:text-[56px] text-[24px] font-sfpro_display_bold leading-[107%] md:mb-[140px] mb-[60px] text-[#cecece] text-center">
         Begin your Crypto 🪐 Journey <br />
         with Plasma Wallet
       </h4>
-      <div className="flex justify-between items-center w-[980px] mb-[60px]">
+      <div className="flex md:flex-row flex-col md:gzp-0 gap-[15px] justify-between items-center md:w-[980px] w-full mb-[60px]">
         <div className="flex flex-col items-center">
           <Image src={one} alt="one" />
-          <h4 className="mt-5 mb-2.5 text-[26px] font-sfpro_display_regular leading-[30px] text-[#cecece] text-center">
+          <h4 className="mt-5 mb-2.5 md:text-[26px] text-[18px] font-sfpro_display_regular leading-[30px] text-[#cecece] text-center">
             Download the App
           </h4>
         </div>
         <div className="flex flex-col items-center">
           <Image src={one} alt="one" />
-          <h4 className="mt-5 mb-2.5 text-[26px] font-sfpro_display_regular leading-[30px] text-[#cecece] text-center">
+          <h4 className="mt-5 mb-2.5 md:text-[26px] text-[18px] font-sfpro_display_regular leading-[30px] text-[#cecece] text-center">
             Top up your wallet
           </h4>
         </div>
         <div className="flex flex-col items-center">
           <Image src={one} alt="one" />
-          <h4 className="mt-5 mb-2.5 text-[26px] font-sfpro_display_regular leading-[30px] text-[#cecece] text-center">
+          <h4 className="mt-5 mb-2.5 md:text-[26px] text-[18px] font-sfpro_display_regular leading-[30px] text-[#cecece] text-center">
             Swap and Earn Crypto
           </h4>
         </div>
@@ -60,24 +60,24 @@ export default function Footer() {
         <Image src={twitter} alt="twitter" />
       </div>
       <Image src={footer} alt="footer" className="mt-10 w-[972px]" />
-      <div className="w-[980px] h-[67px] flex justify-between items-center border-t border-[#86868b4e]">
-        <div className="flex justify-between items-center font-sfpro_display_regular ">
-          <div className="flex items-center">
-            <h4 className="text-[#424245] text-xs leading-[107%] mr-5">
+      <div className="md:w-[980px] w-full h-[67px] flex justify-between md:flex-row flex-col items-center md:gap-0 gap-2.5 border-t border-[#86868b4e] md:pt-0 pt-5  ">
+        <div className="flex flex-col md:flex-row justify-between md:gap-0 gap-2.5 items-center font-sfpro_display_regular ">
+          <div className="flex md:flex-row md:gap-0 gap-2.5 flex-col items-center">
+            <h4 className="text-[#424245] md:text-xs text-[10px] leading-[107%] mr-5">
               Copyright © 2048 Plasma Alliance. All rights reserved.
             </h4>
-            <h4 className="text-[#86868b] mx-[14px] text-xs leading-[107%]">
+            <h4 className="text-[#86868b] mx-[14px] md:text-xs text-[10px] leading-[107%] ">
               Privacy Policy
             </h4>
-            <h4 className="text-[#86868b] mx-[14px] text-xs leading-[107%]">
+            <h4 className="text-[#86868b] mx-[14px] md:text-xs text-[10px] leading-[107%]">
               Terms of Service
             </h4>
-            <h4 className="text-[#86868b] mx-[14px] text-xs leading-[107%]">
+            <h4 className="text-[#86868b] mx-[14px] md:text-xs text-[10px] leading-[107%]">
               ENS: 0xPlasma.eth
             </h4>
           </div>
         </div>
-        <h4 className="text-[#86868b] mx-[14px] text-xs leading-[107%]">
+        <h4 className="text-[#86868b] mx-[14px] md:text-xs text-[10px] leading-[107%] font-sfpro_display_regular">
           hello@plasma-wallet.com
         </h4>
       </div>

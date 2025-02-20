@@ -52,16 +52,16 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="py-[140px] bg-[#0c0c0c]">
-      <h4 className="text-[56px] font-sfpro_display_bold leading-[107%] mb-[140px] pt-5 text-[#cecece] text-center">
+    <div className="md:py-[140px] py-[100px] bg-[#0c0c0c]">
+      <h4 className="md:text-[56px] text-[24px] font-sfpro_display_bold leading-[107%] md:mb-[140px] mb-[60px] pt-5 text-[#cecece] text-center">
         Everything you need is in your 🙏 hands
       </h4>
-      <div className="grid grid-cols-2 gap-4 max-w-[980px] mx-auto">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:max-w-[980px] md:mx-auto w-full px-5">
         {portfolioItems.map((item, index) => (
           <div
             key={index}
             className={`${
-              index === 0 ? "col-span-2" : "col-span-1"
+              index === 0 ? "md:col-span-2 col-span-1" : "md:col-span-1 col-span-1"
             } w-full bg-black rounded-[20px]  ${
               index === 0 ? "flex-row" : "flex-col"
             } flex justify-between items-center text-[#cecece] ${
@@ -69,21 +69,21 @@ export default function Portfolio() {
             }`}
           >
             {index === 0 ? (
-              <div className="flex justify-between items-center w-full">
-                <div className="w-[50%] flex justify-center">
+              <div className="flex justify-between md:flex-row flex-col items-center w-full">
+                <div className="md:w-[50%] flex justify-center">
                   <Image
                     src={item.leftImage}
-                    className="w-[332px] h-[520px] object-contain"
+                    className="md:w-[332px] w-[219px] md:h-[520px] h-[340px] object-contain"
                     alt={item.title}
                   />
                 </div>
 
-                <div className="flex flex-col justify-center max-w-[50%] p-[35px]">
-                  <h2 className="text-[56px] font-sfpro_display_bold leading-[107%] mb-[18px]">
+                <div className="flex flex-col justify-center md:w-[50%] w-full p-[35px]">
+                  <h2 className="md:text-[56px] text-[24px] font-sfpro_display_bold leading-[107%] mb-[18px] md:text-left text-center">
                     Track your asset portfolio and DeFi positions accross
                     multiple chains
                   </h2>
-                  <p className="text-[24px] font-sfpro_display_regular leading-[107%]">
+                  <p className="md:text-[24px] text-[16px] md:text-left text-center font-sfpro_display_regular leading-[107%]">
                     With a real-time on-chain data and analytics
                   </p>
                 </div>

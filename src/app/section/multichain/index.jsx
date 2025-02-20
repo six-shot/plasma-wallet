@@ -23,19 +23,19 @@ export default function MultiChain() {
   ];
 
   return (
-    <div className="h-[140vh] flex justify-center items-center flex-col">
+    <div className="md:h-[140vh] md:py-0 py-[100px] flex justify-center items-center flex-col md:px-0 px-5">
       <div className="flex flex-col items-start">
-        <Image src={multichain} alt="multichain" />
-        <h4 className="text-[26px] font-sfpro_display_regular leading-[32px] text-white">
+        <Image className="md:w-auto w-[343px]" src={multichain} alt="multichain" />
+        <h4 className="md:text-[26px] text-[18px] font-sfpro_display_regular leading-[32px] text-white md:text-left text-center">
           Unlimited support of all EVM Chains with the fastest RPC
         </h4>
-        <div className="flex items-center justify-between mt-10 w-[842px] pr-[20%]">
+        <div className="flex md:gap-0 gap-[15px] md:flex-nowrap flex-wrap items-center md:justify-between mt-10 md:w-[842px] md:pr-[20%]">
           {chains.map((chain, index) => (
             <Image
               key={index}
               src={chain.icon}
               alt={chain.name}
-              className="w-[60px] h-[60px]"
+              className="md:w-[60px] w-[36px] md:h-[60px] h-[36px]"
             />
           ))}
         </div>

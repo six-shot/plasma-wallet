@@ -20,26 +20,26 @@ export default function FeautureCard3() {
   const imageY = useTransform(scrollYProgress, [0.25, 0.55], [50, 0]);
 
   return (
-    <div className="h-[120vh] flex justify-center items-center">
+    <div className="md:h-[120vh] h-full md:py-0 py-[100px] flex justify-center items-center">
       <motion.div ref={ref} className="flex text-white">
-        <div className="flex items-center">
+        <div className="flex md:flex-row flex-col items-center">
           <motion.div style={{ opacity: imageOpacity, y: imageY }}>
             <Image
-              className="w-[490px]  h-[890px] object-contain"
+              className="md:w-[490px] w-[219px]  md:h-[890px] h-[446px] object-contain"
               src={feature_card}
               alt="feature-card"
             />
           </motion.div>
-          <div className="px-5">
+          <div className="px-5 md:mt-0 mt-10">
             <motion.h2
-              className="text-[96px] font-sfpro_display_bold   h11 leading-[107px] "
+              className="md:text-[96px] text-[48px] font-sfpro_display_bold   h11 md:leading-[107px] leading-[107%] md:text-left text-center "
               style={{ opacity, y }}
             >
               NFT <br />
              Metaverse 
-              <br /> in one app
+              <br className="md:block hidden"/> in one app
             </motion.h2>
-            <p className="mt-10 text-[26px] font-sfpro_display_regular leading-[112%] tracking-[1.1px] text-[#cecece] w-[465px]">
+            <p className="mt-10 md:text-[26px] text-[18px] font-sfpro_display_regular leading-[112%] tracking-[1.1px] text-[#cecece] md:w-[465px] w-full md:text-left text-center">
               Buy, Sell and Store your NFTs and collections in one place
             </p>
           </div>

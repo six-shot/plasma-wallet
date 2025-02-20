@@ -20,21 +20,22 @@ export default function FeautureCard() {
   const imageY = useTransform(scrollYProgress, [0.25, 0.55], [50, 0]);
 
   return (
-    <div className="h-[120vh] flex justify-center items-center">
+    <div className="h-[120vh] flex justify-center items-center md:px-0 px-5">
       <motion.div ref={ref} className="flex text-white">
-        <div className="flex items-center">
+        <div className="flex md:flex-row flex-col items-center">
           <motion.h2
-            className="text-[56px] font-sfpro_display_bold leading-[64px] pr-10"
+            className="md:text-[56px] text-[24px] font-sfpro_display_bold md:leading-[64px] leading-[107%] md:pr-10 md:text-left text-center"
             style={{ opacity, y }}
           >
-            Store, Send, <br />
-            Receive and <br /> Trade over
-            <br /> 10,000 crypto
-            <br /> assets and NFTs
+            Store, Send, <br className="md:block hidden" />
+            Receive and <br className="md:block hidden" />
+            Trade over
+            <br className="md:block hidden" /> 10,000 crypto
+            <br className="md:block hidden" /> assets and NFTs
           </motion.h2>
           <motion.div style={{ opacity: imageOpacity, y: imageY }}>
             <Image
-              className="w-[490px]  h-[890px] object-contain"
+              className="md:w-[490px] w-[219px]  md:h-[890px] h-[446px] object-contain"
               src={feature_card}
               alt="feature-card"
             />
