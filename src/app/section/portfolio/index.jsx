@@ -53,6 +53,9 @@ export default function Portfolio() {
 
   return (
     <div className="py-[140px] bg-[#0c0c0c]">
+      <h4 className="text-[56px] font-sfpro_display_bold leading-[107%] mb-[140px] pt-5 text-[#cecece] text-center">
+        Everything you need is in your 🙏 hands
+      </h4>
       <div className="grid grid-cols-2 gap-4 max-w-[980px] mx-auto">
         {portfolioItems.map((item, index) => (
           <div
@@ -102,7 +105,7 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <p className="mt-5 text-[#464646] font-sfpro_display_medium text-center">
+      <p className="mt-10 text-[#464646] font-sfpro_display_medium text-center">
         The app is supporting 19 languages localizations
       </p>
     </div>

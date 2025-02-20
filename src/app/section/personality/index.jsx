@@ -3,7 +3,7 @@ import Image from 'next/image'
 import feature_card from "../../../../public/personality.png"
 export default function Personality() {
   return (
-    <div className="flex justify-center items-center flex-col h-[140vh]">
+    <div className="flex justify-center items-center flex-col my-[140px]">
       <h2 className="text-[96px] font-sfpro_display_bold   text-white leading-[107px] py-5 text-center">
         Personality <br /> is Important
       </h2>
