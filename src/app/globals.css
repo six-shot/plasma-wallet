@@ -27,6 +27,17 @@ body {
   background-clip: text;
   font-size: 96px;
 }
+.prr {
+  -webkit-text-fill-color: transparent;
+  background-image: url("../../public/privacyy.png");
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 96px;
+}
 
 .frames {
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
