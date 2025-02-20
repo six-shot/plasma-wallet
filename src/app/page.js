@@ -9,6 +9,7 @@ import FeautureCard2 from "@/components/ui/cards/FeautureCard2";
 import FeautureCard3 from "@/components/ui/cards/FeautureCard3";
 import Personality from "./section/personality";
 import Privacy from "./section/privacy";
+import Portfolio from "./section/portfolio";
 export default function Home() {
   return (
     <div>
@@ -21,6 +22,7 @@ export default function Home() {
       <FeautureCard3 />
       <Personality /> 
       <Privacy />     
+      <Portfolio />
     </div>
   );
 }

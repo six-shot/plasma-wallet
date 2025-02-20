@@ -3,7 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import privacy from "../../../../public/privacy.gif";
+import privacy from "../../../../public/privacy.png";
+import security from "../../../../public/privacy.gif";
 
 export default function Privacy() {
   const ref = useRef(null);
@@ -20,13 +21,10 @@ export default function Privacy() {
   const imageY = useTransform(scrollYProgress, [0.25, 0.55], [50, 0]);
 
   return (
-    <div className="h-[140vh] py-[140px] flex justify-center items-center">
+    <div className="h-[140vh] py-[140px] max-w-[980px] mx-auto flex justify-between items-center">
       <motion.div ref={ref} className="flex flex-col text-white">
         <div className="flex items-center mb-[140px]">
-          <motion.div
-            style={{ opacity: imageOpacity, y: imageY }}
-            className="px-5"
-          >
+          <motion.div style={{ opacity: imageOpacity, y: imageY }} className="">
             <Image
               className="w-[437px]  h-[172px] object-contain"
               src={privacy}
@@ -65,11 +63,7 @@ export default function Privacy() {
             style={{ opacity: imageOpacity, y: imageY }}
             className="px-5 w-[490px]  h-[462px]"
           >
-            <Image
-              className=""
-              src={privacy}
-              alt="privacy"
-            />
+            <Image className="" src={security} alt="privacy" />
           </motion.div>
         </div>
       </motion.div>
