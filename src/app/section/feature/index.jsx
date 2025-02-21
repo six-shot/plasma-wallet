@@ -39,28 +39,28 @@ export default function Feature() {
       <motion.h1
         ref={text1Ref}
         style={{ opacity: opacity1 }}
-        className="h1 font-sfpro_display_bold md:text-[124px] text-[36px] md:leading-[132px] leading-[116%]"
+        className="h1 font-sfpro_display_bold lg:text-[124px] md:text-[96px] text-[36px] lg:leading-[132px] md:leading-[116px] leading-[116%]"
       >
         Self-Custody
       </motion.h1>
       <motion.h1
         ref={text2Ref}
         style={{ opacity: opacity2 }}
-        className="h1 font-sfpro_display_bold md:text-[124px] text-[36px] md:leading-[132px] leading-[116%]"
+        className="h1 font-sfpro_display_bold lg:text-[124px] md:text-[96px] text-[36px] lg:leading-[132px] md:leading-[116px] leading-[116%]"
       >
         Crypto wallet
       </motion.h1>
       <motion.h1
         ref={text3Ref}
         style={{ opacity: opacity3 }}
-        className="h1 font-sfpro_display_bold md:text-[124px] text-[36px] md:leading-[132px] leading-[116%]"
+        className="h1 font-sfpro_display_bold lg:text-[124px] md:text-[96px] text-[36px] lg:leading-[132px] md:leading-[116px] leading-[116%]"
       >
         For DeFi, NFT
       </motion.h1>
       <motion.h1
         ref={text4Ref}
         style={{ opacity: opacity4 }}
-        className="h1 font-sfpro_display_bold md:text-[124px] text-[36px] md:leading-[132px] leading-[116%]"
+        className="h1 font-sfpro_display_bold lg:text-[124px] md:text-[96px] text-[36px] lg:leading-[132px] md:leading-[116px] leading-[116%]"
       >
         & Metaverse
       </motion.h1>

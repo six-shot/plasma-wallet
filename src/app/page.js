@@ -25,7 +25,6 @@ export default function Home() {
       <Privacy />
       <Portfolio />
       <Footer />
-     
     </div>
   );
 }

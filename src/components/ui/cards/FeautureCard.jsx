@@ -20,11 +20,11 @@ export default function FeautureCard() {
   const imageY = useTransform(scrollYProgress, [0.25, 0.55], [50, 0]);
 
   return (
-    <div className="h-[120vh] flex justify-center items-center md:px-0 px-5">
+    <div className="h-[120vh] flex justify-center items-center lg:px-0 md:px-10 px-5">
       <motion.div ref={ref} className="flex text-white">
         <div className="flex md:flex-row flex-col items-center">
           <motion.h2
-            className="md:text-[56px] text-[24px] font-sfpro_display_bold md:leading-[64px] leading-[107%] md:pr-10 md:text-left text-center"
+            className="md:text-[56px] text-[24px] font-sfpro_display_bold md:leading-[64px] leading-[107%] lg:pr-10 md:pr-0  md:text-left text-center"
             style={{ opacity, y }}
           >
             Store, Send, <br className="md:block hidden" />
@@ -35,7 +35,7 @@ export default function FeautureCard() {
           </motion.h2>
           <motion.div style={{ opacity: imageOpacity, y: imageY }}>
             <Image
-              className="md:w-[490px] w-[219px]  md:h-[890px] h-[446px] object-contain"
+              className="lg:w-[490px] md:w-[324px] w-[219px]  md:h-[660px] lg:h-[890px] h-[446px] object-contain"
               src={feature_card}
               alt="feature-card"
             />

@@ -2,7 +2,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import Preloader from "@/components/Loader";
-import Script from "next/script";
 
 
 const sfpro_display_bold = localFont({
@@ -31,12 +30,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${sfpro_display_bold.variable} ${sfpro_display_medium.variable} ${sfpro_display_regular.variable} antialiased`}
       >
-        <Preloader />
+          <Preloader />
         {children}
-        <Script
-          src="https://cdn.jsdelivr.net/npm/@webflow/webflow-libraries@1.0.0/webflow-animations.min.js"
-          strategy="beforeInteractive"
-        />
       </body>
     </html>
   );

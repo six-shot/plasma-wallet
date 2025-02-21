@@ -19,13 +19,13 @@ export default function Navbar() {
             </h5>
           </div>
         </Link>
-        <div className="md:hidden  flex flex-col items-center gap-[6px] mr-[-.5rem]">
+        <div className="lg:hidden  flex flex-col items-center gap-[6px] mr-[-.5rem]">
           <div className="w-[24px] h-[2px] bg-white"></div>
           <div className="w-[24px] h-[2px] bg-white"></div>
           <div className="w-[24px] h-[2px] bg-white"></div>
         </div>
 
-        <div className="md:block hidden">
+        <div className="lg:block hidden">
           <Link href="/" className="opacity-[.3]">
             <div className="h-[45px] w-[160px] border border-white flex items-center rounded-[8px] px-2">
               <div className="w-[36px]  flex items-center justify-center">

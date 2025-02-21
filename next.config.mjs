@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  scriptLoader: {
-    domains: ["cdn.jsdelivr.net"],
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;
