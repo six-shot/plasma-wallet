@@ -22,7 +22,11 @@ export default function Home() {
       <FeautureCard2 />
       <FeautureCard3 />
       <Personality />
+
       <Privacy />
+      
+
+
       <Portfolio />
       <Footer />
     </div>

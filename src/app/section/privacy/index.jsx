@@ -21,7 +21,7 @@ export default function Privacy() {
   const imageY = useTransform(scrollYProgress, [0.25, 0.55], [50, 0]);
 
   return (
-    <div className="md:h-[140vh] h-full md:py-[140px] py-[100px] max-w-[980px] mx-auto flex justify-between items-center">
+    <div className="md:h-[140vh] h-full md:py-[140px] py-[100px] max-w-[980px] mx-auto flex justify-between items-center ">
       <motion.div ref={ref} className="flex flex-col text-white">
         <div className="flex md:flex-row flex-col md:items-center mb-[140px]">
           <div className="">
@@ -33,13 +33,13 @@ export default function Privacy() {
           </div>
           <div className="px-5 flex md:justify-normal flex-col justify-center md:items-start items-center">
             <motion.h2
-              className="md:text-[96px] text-[48px] font-sfpro_display_bold    md:leading-[107px] leading-[107%] prr "
+              className="lg:text-[96px] md:text-[68px] text-[48px] font-sfpro_display_bold    md:leading-[107px] leading-[107%] prr "
               style={{ opacity, y }}
             >
               Privacy <br className="md:block hidden"/>
               Matters
             </motion.h2>
-            <p className="mt-5 mb-2.5 md:text-[26px] text-[18px] font-sfpro_display_regular leading-[112%] tracking-[1.1px] text-[#cecece] md:w-[437px] w-full md:text-left text-center">
+            <p className="mt-5 mb-2.5 md:text-[26px] text-[18px] font-sfpro_display_regular leading-[112%] tracking-[1.1px] text-[#cecece] lg:w-[437px] w-full md:text-left text-center">
               We don’t collect any information <br /> about users and don’t
               request KYC
             </p>
@@ -48,13 +48,13 @@ export default function Privacy() {
         <div className="flex md:flex-row flex-col md:items-center">
           <div className="px-5 flex md:justify-normal flex-col justify-center md:items-start items-center">
             <motion.h2
-              className="md:text-[96px] text-[48px] font-sfpro_display_bold   prr md:leading-[107px] leading-[107%] md:w-[437px] w-full"
+              className="lg:text-[96px] md:text-[68px] text-[48px] md:text-left text-center font-sfpro_display_bold   prr md:leading-[107px] leading-[107%] md:w-[437px] w-full"
               style={{ opacity, y }}
             >
               And <br /> Security <br /> Matters
               <br /> The most
             </motion.h2>
-            <p className="mt-5 mb-2.5 md:text-[26px] text-[18px] font-sfpro_display_regular  leading-[112%] tracking-[1.1px] text-[#cecece] md:w-[437px] w-full">
+            <p className="mt-5 mb-2.5 md:text-[26px] text-[18px] font-sfpro_display_regular  leading-[112%] tracking-[1.1px] text-[#cecece] lg:w-[437px] w-full">
               Your private keys and seed phrase are stored in app's local
               storage and encrypted with your beautiful face
             </p>

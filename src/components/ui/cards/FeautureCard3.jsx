@@ -25,21 +25,21 @@ export default function FeautureCard3() {
         <div className="flex md:flex-row flex-col items-center">
           <motion.div style={{ opacity: imageOpacity, y: imageY }}>
             <Image
-              className="md:w-[490px] w-[219px]  md:h-[890px] h-[446px] object-contain"
+              className="lg:w-[490px] md:w-[324px] w-[219px]  md:h-[660px] lg:h-[890px] h-[446px] object-contain "
               src={feature_card}
               alt="feature-card"
             />
           </motion.div>
-          <div className="px-5 md:mt-0 mt-10">
+          <div className="px-5 md:mt-0 mt-10 md:w-[364px] lg:w-auto w-auto">
             <motion.h2
-              className="md:text-[96px] text-[48px] font-sfpro_display_bold   h11 md:leading-[107px] leading-[107%] md:text-left text-center "
+              className="lg:text-[96px] md:text-[68px] text-[48px] font-sfpro_display_bold   h11 lg:leading-[107px] leading-[107%] md:text-left text-center "
               style={{ opacity, y }}
             >
               NFT <br />
-             Metaverse 
-              <br className="md:block hidden"/> in one app
+              Metaverse
+              <br className="md:block hidden" /> in one app
             </motion.h2>
-            <p className="mt-10 md:text-[26px] text-[18px] font-sfpro_display_regular leading-[112%] tracking-[1.1px] text-[#cecece] md:w-[465px] w-full md:text-left text-center">
+            <p className="mt-10 md:text-[26px] text-[18px] font-sfpro_display_regular leading-[112%] tracking-[1.1px] text-[#cecece] lg:w-[465px] w-full md:text-left text-center">
               Buy, Sell and Store your NFTs and collections in one place
             </p>
           </div>
